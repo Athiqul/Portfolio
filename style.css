@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Overlock SC', cursive;
+}
+.dotted{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width:70px;
+}
+/* Navbar design start */
+.logo img{
+    width:50%;
+    border-radius: 50%;
+}
+.navbar{
+    background-color: cadetblue;
+    padding:1% 7%;
+    text-align: center;
+
+}
+.name h1{
+    color:white;
+    font-size:30px;
+    margin-top: 0px;
+    
+}
+.menu a{
+    text-decoration: none;
+    color:white;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    background-color:teal;
+    text-transform: uppercase;
+    border-radius:1000px;
+}
+.menu a:hover{
+    background-color: gray;
+}
+[class*=col-]{
+    width: 100%;
+}
+/* NavBar design end */
+
+/* Profile Design start */
+.profile{
+    padding: 50px;
+    position: relative;
+}
+.profile img{
+    width:15%;
+    border-radius: 50px;
+}
+.Top-designer{
+    position:absolute;
+    left: 65%;
+    top: 10px;
+   
+    transition: transform 2s;
+}
+.Top-designer:hover{
+    transform: rotate(360deg);
+    width:15%;
+}
+.profile-des{
+   margin-top:60px;
+   text-align: center;
+}
+.profile-des h3{
+    font-size: 2rem;
+}
+.profile-des p{
+    color: gray;
+    font-size: 1.2rem;
+}
+.Bottom-designer{
+    position:absolute;
+    right: 65%;
+    transition: transform 2s;
+    bottom: 5px;
+}
+.Bottom-designer:hover{
+    transform: rotate(360deg);
+    width:15%;
+}
+        
+        /* Profile Design end */
+        /* About me start */
+        .about-me{
+            text-align: center;
+            background-color: teal;
+            color:white;
+            padding: 10px;
+        }
+        .about-me img{
+            width:300px;
+            height: 200px;
+            border-radius: 50%;
+            border:1px solid black;
+        }
+        .about-me-des{
+            margin-left: 5%;
+            width: 90%;
+            text-align: center;
+        }
+        .about-me-des p{
+            font-size: 1.2rem;
+            color:honeydew;
+        }
+        .about-me-des a{
+            text-decoration: none;
+            color:white;
+          
+            font-size: 1.2rem;
+        }
+        .about-me-des a:hover{
+            color:yellowgreen;
+        }
+        .button
+        {
+                background-color: black;
+                color: white;
+                padding: 10px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 1.1rem;
+        }
+        .button:hover{
+             background-color: tomato;
+        }
+        .about-me::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        /* About me end */
+        /* professional start */
+        .professional{
+            padding: 1% 5%;
+            
+        }
+        .work_card{
+            background-color:silver;
+            height:550px;
+            border-radius:10px;
+            margin-bottom: 10px;
+        }
+        .icon{
+            text-align: center;
+        }
+        .icon img{
+            margin-top: 5px;
+            border:5px solid white;
+            border-radius: 50%;
+            padding:15px;
+            font-size: 1.2rem;
+        }
+        .pro-title{
+            background-color: gray;
+            text-align: center;
+            color:white;
+            padding:5px;
+        }
+        .pro-des{
+            text-align:left;
+        }
+        .work_card:hover{
+            box-shadow: 0px 3px 3px 5px black;
+
+        }
+        .skills{
+           padding-right: 45px;
+        }
+        .skills li{
+            list-style-type: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            
+            margin:25px 10px;
+            position: relative;
+        }
+        .skills li::before{
+            content: '';
+            position: absolute;
+            top : calc(100% + 5px);
+            width: 100%;
+            height: 10px;
+            left:0px;
+            border-radius: 1000px;
+            background-color: rgb(86,86,153,.5);
+        }
+        .skills li::after{
+            content: '';
+            position: absolute;
+            top : calc(100% + 5px);
+            left: 0px;
+            width:0%;
+            height: 10px;
+            border-radius: 1000px;
+            background-color: rgb(86,86,153,5);
+
+            animation-duration:3s;
+            animation-timing-function:linear;
+            animation-delay:2s;
+            animation-fill-mode:forwards;
+            animation-iteration-count:2;
+
+            box-shadow: 1px 0px 3px white;
+        }
+        .skills li.html::after{
+            animation-name:html;
+        }
+        @keyframes html{
+            to{
+                  width:85%;
+            }
+        }
+        .skills li.CSS::after{
+            animation-name:CSS;
+        }
+        @keyframes CSS{
+            to{
+                  width:88%;
+            }
+        }
+        .skills li.bootstrap::after{
+            animation-name:bootstrap;
+        }
+        @keyframes bootstrap{
+            to{
+                  width:10%;
+            }
+        }
+        .skills li.js::after{
+            animation-name:js;
+        }
+        @keyframes js{
+            to{
+                  width:10%;
+            }
+        }
+        .skills li.MySQL::after{
+            animation-name:MySQL;
+        }
+        @keyframes MySQL{
+            to{
+                  width:50%;
+            }
+        } .skills li.JAVA::after{
+            animation-name:JAVA;
+        }
+        @keyframes JAVA{
+            to{
+                  width:80%;
+            }
+        }
+         .skills li.Cplus::after{
+            animation-name:Cplus;
+        }
+        @keyframes Cplus{
+            to{
+                  width:89%;
+            }
+        }
+        .skills li.problem::after{
+            animation-name:problem;
+        }
+        @keyframes problem{
+            to{
+                  width:77%;
+            }
+        }
+
+
+         .professional::after{
+             content: '';
+             display: table;
+             clear: both;
+         }
+        /* Professional end */
+        /* Achievement and Contact section start */
+        .achievement_row{
+            margin-top: 10px;
+            background-color: teal;
+        }
+        .achievment{
+            text-align: center;
+            color: white;
+
+        }
+       
+        .contact{
+            text-align: center;
+            color: whitesmoke;
+
+        }
+        .contact input,textarea{
+            width: 100%;
+            resize: none;
+            border: none;
+            padding:10px;
+            font-size: 1rem;
+            border-radius:5px;
+            text-align: center;
+        }
+        .contact button{
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            border:none;
+            padding: 10px;
+            margin: 10px;
+            border-radius:5px;
+            cursor: pointer;
+            width: 100px;
+        }
+        button:hover{
+            background-color: brown;
+        }
+        .social{
+            color:white;
+            text-align: center;
+        }
+        .btn{
+            width:50px;
+            border:none;
+            cursor: pointer;
+            padding: 5px;
+            margin:10px;
+            border-radius:30px;
+            background-color: white;
+           font-size:32px;
+        }
+        .achievement_row::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        /* Achievement and Contact section end */
+        /* footer section start from here */
+        .footer{
+            text-align: center;
+            background-color: black;
+        }
+        
+        .footer_menu a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 15px;
+            font-size:1.2rem;
+        }
+        .footer_menu a:hover{
+            color: gray;
+        }
+        .footer::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .footer_desc{
+            color: white;
+            font-size: 1.0rem;
+        }
+        /* footer section ends from here */
+
